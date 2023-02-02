@@ -13,11 +13,17 @@ export default class Bank {
   }
   
   deposit(amount) {
+    if (typeof amount !== 'number'){
+      throw new Error('Please enter a number');
+    }
     this._balance += amount;
     this.recordTransaction(amount, 'credit');
   }
   
   withdraw(amount){
+    if (typeof amount !== 'number'){
+      throw new Error('Please enter a number');
+    }
     this._balance -= amount;
     this.recordTransaction(amount, 'debit');
   }
@@ -29,7 +35,7 @@ export default class Bank {
     transaction.balance = this.balance;
     transaction.type = type;
 
-    this._listOfTransactions.push(transaction)
+    this._listOfTransactions.push(transaction);
   }
 
   printStatement() {
@@ -39,8 +45,8 @@ export default class Bank {
   }
 }
 
-let bank = new Bank();
-bank.deposit(1000);
-bank.deposit(2000);
-bank.withdraw(500);
-console.log(bank.printStatement());
+// let bank = new Bank();
+// bank.deposit("hello");
+// bank.deposit(2000);
+// bank.withdraw(500);
+// console.log(bank.printStatement());

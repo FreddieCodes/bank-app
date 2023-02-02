@@ -1,14 +1,14 @@
 import Bank from '../bank.js';
 
 // Deposit
-test('depositing 1000 increases the balance by 1000', () => {
+test("depositing 1000 increases the balance by 1000", () => {
   let bank = new Bank();
   bank.deposit(1000);
-  
+
   expect(bank.balance).toBe(1000);
 });
 
-test('depositing 1000 and then 2000 increases the balance by 3000', () => {
+test("depositing 1000 and then 2000 increases the balance by 3000", () => {
   let bank = new Bank();
   bank.deposit(1000);
   bank.deposit(2000);
@@ -16,13 +16,23 @@ test('depositing 1000 and then 2000 increases the balance by 3000', () => {
   expect(bank.balance).toBe(3000);
 });
 
+test("if the deposit amount isn't of the type number it will throw an error", () => {
+  let bank = new Bank();
+  expect(() => bank.deposit("1000")).toThrowError(new Error('Please enter a number'));  
+});
+
 // Withdraw
-test('Withdrawing 1000 decreases the balance by 1000', () => {  
+test("Withdrawing 1000 decreases the balance by 1000", () => {  
   let bank = new Bank();
   bank.deposit(1000);
   bank.withdraw(1000);
 
   expect(bank.balance).toBe(0);
+});
+
+test("if the withdrawal amount isn't of the type number it will throw an error", () => {
+  let bank = new Bank();
+  expect(() => bank.withdraw("2000")).toThrowError(new Error('Please enter a number'));  
 });
 
 // Record transaction

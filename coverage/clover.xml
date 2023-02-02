@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1674930070229" clover="3.2.0">
-  <project timestamp="1674930070229" name="All files">
-    <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8" elements="33" coveredelements="33" complexity="0" loc="21" ncloc="21" packages="1" files="1" classes="1"/>
+<coverage generated="1675373562343" clover="3.2.0">
+  <project timestamp="1675373562343" name="All files">
+    <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8" elements="36" coveredelements="36" complexity="0" loc="20" ncloc="20" packages="1" files="1" classes="1"/>
     <file name="bank.js" path="/Users/freddieofori/Documents/techtests/bank-app/bank.js">
-      <metrics statements="21" coveredstatements="21" conditionals="4" coveredconditionals="4" methods="8" coveredmethods="8"/>
-      <line num="3" count="9" type="stmt"/>
-      <line num="4" count="9" type="stmt"/>
-      <line num="8" count="19" type="stmt"/>
-      <line num="12" count="8" type="stmt"/>
-      <line num="16" count="10" type="stmt"/>
-      <line num="17" count="10" type="stmt"/>
-      <line num="21" count="5" type="stmt"/>
-      <line num="22" count="5" type="stmt"/>
-      <line num="26" count="16" type="stmt"/>
-      <line num="27" count="16" type="stmt"/>
-      <line num="28" count="16" type="stmt"/>
-      <line num="29" count="16" type="stmt"/>
-      <line num="30" count="16" type="stmt"/>
-      <line num="32" count="16" type="stmt"/>
-      <line num="36" count="4" type="stmt"/>
-      <line num="37" count="8" type="cond" truecount="4" falsecount="0"/>
-      <line num="42" count="1" type="stmt"/>
-      <line num="43" count="1" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
-      <line num="45" count="1" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
+      <metrics statements="20" coveredstatements="20" conditionals="8" coveredconditionals="8" methods="8" coveredmethods="8"/>
+      <line num="3" count="10" type="stmt"/>
+      <line num="4" count="10" type="stmt"/>
+      <line num="8" count="16" type="stmt"/>
+      <line num="12" count="6" type="stmt"/>
+      <line num="16" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="17" count="1" type="stmt"/>
+      <line num="19" count="8" type="stmt"/>
+      <line num="20" count="8" type="stmt"/>
+      <line num="24" count="5" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="27" count="4" type="stmt"/>
+      <line num="28" count="4" type="stmt"/>
+      <line num="32" count="13" type="stmt"/>
+      <line num="33" count="13" type="stmt"/>
+      <line num="34" count="13" type="stmt"/>
+      <line num="35" count="13" type="stmt"/>
+      <line num="36" count="13" type="stmt"/>
+      <line num="38" count="13" type="stmt"/>
+      <line num="42" count="3" type="stmt"/>
+      <line num="43" count="5" type="cond" truecount="4" falsecount="0"/>
     </file>
   </project>
 </coverage>
